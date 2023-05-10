@@ -1,0 +1,14 @@
+FACTURE
+
+Numéro de facture : 001
+
+Nom du client : John Doe
+Adresse : 123 rue du Paradis
+Code postal : 75001
+
+Désignation	Prix unitaire	Quantité	Total
+----------------------------------------------------
+Produit A	10.00		2		20.00
+Produit B	5.00		1		5.00
+
+Total : 25.00
