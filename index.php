@@ -16,7 +16,8 @@
 					 <li><a href="">évènement</a></li> 
 
 					<li><a href="">Se connecter</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="aff.php">Reclamation</a></li>
+					<li><a href="affrep.php">Reponse</a></li>
 				</ul>
 				<img src="kisspng-shopping-cart-customer-vector-graphics-computer-ic-shopping-cart-svg-png-icon-free-download-62243-5b6fba2e62d338.5628724115340488144048.png" alt="" class="cart" />
 			</nav>
@@ -27,8 +28,8 @@
 				<h4>livre moi partout</h4>
 
 				<div class="row">
-					<a href="affcat.php"> voir les categories des livres</a>
-					<a href="aff.php"> voir les livres </a>
+					<a href=> voir les categories des livres</a>
+					<a href=> voir les livres </a>
 					<a href="#">incrirez-vous <span>&#x27f6</span></a>
 					<span>
                         La bibliothèque est l'endroit parfait pour se déconnecter des écrans et leur donner le goût de la lecture. Ils peuvent y emprunter des livres de tous les styles et élargir leurs horizons.           <br />

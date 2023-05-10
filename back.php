@@ -10,7 +10,6 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
-  
   <div class="sidebar">
     <div class="logo-details">
       <i class='bx bxl-c-plus-plus'></i>
@@ -24,7 +23,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="reponse.php">
             <i class='bx bx-box' ></i>
             <span class="links_name">Réponse</span>
           </a>
@@ -36,11 +35,10 @@
           </a>
         </li>
         <li>
-          <a href="evenement.php">
+          <a href="#">
             
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">Evenement</span>
-            
           </a>
         </li>
         <li>
@@ -50,19 +48,20 @@
           </a>
         </li>
         <li>
-          <a href="formation.php">
+          <a href="#">
             <i class='bx bx-book-alt' ></i>
             <span class="links_name">Formation</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
+
             <i class='bx bx-user' ></i>
             <span class="links_name">Catégorie</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="reclamation.php">
             <i class='bx bx-message' ></i>
             <span class="links_name">contact</span>
           </a>
@@ -85,12 +84,6 @@
             <span class="links_name">Log out</span>
           </a>
         </li>
-        <li>
-          <a href="reser.php">
-            <i class='bx bx-book' ></i>
-            <span class="links_name">reservation</span>
-          </a>
-        </li>
       </ul>
   </div>
   <section class="home-section">
@@ -108,7 +101,7 @@
       </div>
       <div class="profile-details">
         <img src="me.jpg.jpg" alt="">
-        <span class="admin_name">Nour Hammemi</span>
+        <span class="admin_name">BAYA CHAABEN</span>
         <i class='bx bx-chevron-down' ></i>
       </div>
       
@@ -127,14 +120,7 @@
               <span class="text"></span>
             </div>
           </div>
-          <section class="show-products">
-
-            <div class="box-container">
          
-              
-            </div>
-         
-         </section>
           <i class='bx bx-cart-alt cart'></i>
         </div>
         <div class="box">
@@ -164,8 +150,7 @@
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">
-            Total Return</div>
+            <div class="box-topic">Total Return</div>
             <div class="number"></div>
             <div class="indicator">
               <i class='bx bx-down-arrow-alt down'></i>
@@ -254,10 +239,9 @@
           </ul>
         </div>
       </div>
-      
     </div>
   </section>
-  
+
   <script>
    let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".sidebarBtn");

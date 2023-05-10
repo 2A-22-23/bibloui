@@ -1,3 +1,12 @@
+<?php
+include '../front/connexion.php';
+
+// récupérer les livres disponibles
+$requete_reclamation = "SELECT * FROM reclamation";
+$query_reclamation = mysqli_query($con, $requete_reclamation);
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,6 +54,43 @@
             listeReclamation.style.display = 'block';
         }
     </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo" alt="" />
+        </nav>
+        <h1>RECLAMATION</h1>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Mail</th>
+                    <th>Numero</th>
+                    <th>Texte</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php while($row_reclamation = mysqli_fetch_assoc($query_reclamation)): ?>
+                <tr>
+                    <td><?= $row_reclamation['nom'] ?></td>
+                    <td><?= $row_reclamation['mail'] ?></td>
+                    <td><?= $row_reclamation['numero'] ?></td>
+                    <td><?= $row_reclamation['texte'] ?></td>
+
+                    <td>
+                        <form method="post">
+                            <input type="hidden" name="id_rec" value="<?= $row_reclamation['id_rec'] ?>">
+>
+                        </form>
+                    </td>
+                </tr>
+                
+                <?php endwhile; ?>
+            </tbody>
+        </table>
+    
         <?php
     include '../front/connexion.php';
 
@@ -79,22 +125,3 @@
         }
     }
 ?>
-
-<form method="post" action="">
-    <label for="nom"> NOM:</label><br>
-    <input type="text" name="nom" id="nom"><br>
-
-    <label for="mail">MAIL:</label><br>
-    <input type="text" name="mail" id="mail"><br>
-   
-    <label for="numero">NUMERO :</label><br>
-    <input type="text" name="numero" id="numero"><br>
-
-    <label for="texte">TEXTE :</label><br>
-    <input type="text" name="texte" id="texte"><br>
-    
-
-    <input type="submit" value="Ajouter">
-</form>
-
-
